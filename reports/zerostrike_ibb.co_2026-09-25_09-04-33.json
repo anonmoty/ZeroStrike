@@ -1,0 +1,232 @@
+{
+    "framework": "ZeroStrike v2.0",
+    "target": "https://ibb.co/5g1Kxg5R",
+    "timestamp": "2026-09-25_09-04-33",
+    "total_vulnerabilities": 32,
+    "vulnerabilities": [
+        {
+            "owasp_id": "A01",
+            "vuln_name": "Admin Panel Publicly Accessible",
+            "severity": "HIGH",
+            "detail": "Administrative interface found at '/admin' with 200 OK response.",
+            "evidence": "Path: https://ibb.co/5g1Kxg5R/admin | Status: 200"
+        },
+        {
+            "owasp_id": "A01",
+            "vuln_name": "Admin Panel Publicly Accessible",
+            "severity": "HIGH",
+            "detail": "Administrative interface found at '/administrator' with 200 OK response.",
+            "evidence": "Path: https://ibb.co/5g1Kxg5R/administrator | Status: 200"
+        },
+        {
+            "owasp_id": "A01",
+            "vuln_name": "Admin Panel Publicly Accessible",
+            "severity": "HIGH",
+            "detail": "Administrative interface found at '/dashboard' with 200 OK response.",
+            "evidence": "Path: https://ibb.co/5g1Kxg5R/dashboard | Status: 200"
+        },
+        {
+            "owasp_id": "A01",
+            "vuln_name": "Admin Panel Publicly Accessible",
+            "severity": "HIGH",
+            "detail": "Administrative interface found at '/wp-admin' with 200 OK response.",
+            "evidence": "Path: https://ibb.co/5g1Kxg5R/wp-admin | Status: 200"
+        },
+        {
+            "owasp_id": "A01",
+            "vuln_name": "Admin Panel Publicly Accessible",
+            "severity": "HIGH",
+            "detail": "Administrative interface found at '/cpanel' with 200 OK response.",
+            "evidence": "Path: https://ibb.co/5g1Kxg5R/cpanel | Status: 200"
+        },
+        {
+            "owasp_id": "A01",
+            "vuln_name": "Admin Panel Publicly Accessible",
+            "severity": "HIGH",
+            "detail": "Administrative interface found at '/phpmyadmin' with 200 OK response.",
+            "evidence": "Path: https://ibb.co/5g1Kxg5R/phpmyadmin | Status: 200"
+        },
+        {
+            "owasp_id": "A01",
+            "vuln_name": "Admin Panel Publicly Accessible",
+            "severity": "HIGH",
+            "detail": "Administrative interface found at '/manager' with 200 OK response.",
+            "evidence": "Path: https://ibb.co/5g1Kxg5R/manager | Status: 200"
+        },
+        {
+            "owasp_id": "A01",
+            "vuln_name": "Admin Panel Publicly Accessible",
+            "severity": "HIGH",
+            "detail": "Administrative interface found at '/console' with 200 OK response.",
+            "evidence": "Path: https://ibb.co/5g1Kxg5R/console | Status: 200"
+        },
+        {
+            "owasp_id": "A01",
+            "vuln_name": "Admin Panel Publicly Accessible",
+            "severity": "HIGH",
+            "detail": "Administrative interface found at '/controlpanel' with 200 OK response.",
+            "evidence": "Path: https://ibb.co/5g1Kxg5R/controlpanel | Status: 200"
+        },
+        {
+            "owasp_id": "A05",
+            "vuln_name": "Server Version Disclosure",
+            "severity": "LOW",
+            "detail": "Web server reveals identity: 'nginx'.",
+            "evidence": "Server: nginx"
+        },
+        {
+            "owasp_id": "A05",
+            "vuln_name": "Default/Test Page Exposed",
+            "severity": "LOW",
+            "detail": "Default or test page accessible at '/info.php'.",
+            "evidence": "Path: /info.php"
+        },
+        {
+            "owasp_id": "A05",
+            "vuln_name": "Default/Test Page Exposed",
+            "severity": "LOW",
+            "detail": "Default or test page accessible at '/phpinfo.php'.",
+            "evidence": "Path: /phpinfo.php"
+        },
+        {
+            "owasp_id": "A05",
+            "vuln_name": "Default/Test Page Exposed",
+            "severity": "LOW",
+            "detail": "Default or test page accessible at '/test.php'.",
+            "evidence": "Path: /test.php"
+        },
+        {
+            "owasp_id": "A05",
+            "vuln_name": "Default/Test Page Exposed",
+            "severity": "LOW",
+            "detail": "Default or test page accessible at '/default.aspx'.",
+            "evidence": "Path: /default.aspx"
+        },
+        {
+            "owasp_id": "A06",
+            "vuln_name": "Component Detected: Apache Struts",
+            "severity": "MEDIUM",
+            "detail": "Potentially outdated or vulnerable component detected in page source.",
+            "evidence": "Pattern: .action"
+        },
+        {
+            "owasp_id": "A09",
+            "vuln_name": "Log File Publicly Accessible",
+            "severity": "HIGH",
+            "detail": "Server log file exposed at '/error.log'.",
+            "evidence": "Path: /error.log"
+        },
+        {
+            "owasp_id": "A09",
+            "vuln_name": "Log File Publicly Accessible",
+            "severity": "HIGH",
+            "detail": "Server log file exposed at '/access.log'.",
+            "evidence": "Path: /access.log"
+        },
+        {
+            "owasp_id": "A09",
+            "vuln_name": "Log File Publicly Accessible",
+            "severity": "HIGH",
+            "detail": "Server log file exposed at '/debug.log'.",
+            "evidence": "Path: /debug.log"
+        },
+        {
+            "owasp_id": "A09",
+            "vuln_name": "Log File Publicly Accessible",
+            "severity": "HIGH",
+            "detail": "Server log file exposed at '/app.log'.",
+            "evidence": "Path: /app.log"
+        },
+        {
+            "owasp_id": "A10",
+            "vuln_name": "Potential SSRF Parameter Detected",
+            "severity": "MEDIUM",
+            "detail": "URL parameters that may accept external URLs found: site, url",
+            "evidence": "Parameters: site, url"
+        },
+        {
+            "owasp_id": "X03",
+            "vuln_name": "Environment Variables Exposed",
+            "severity": "CRITICAL",
+            "detail": "Sensitive file accessible at '/.env'.",
+            "evidence": "URL: https://ibb.co/5g1Kxg5R/.env | Size: 23914 bytes"
+        },
+        {
+            "owasp_id": "X03",
+            "vuln_name": "Apache Config Exposed",
+            "severity": "HIGH",
+            "detail": "Sensitive file accessible at '/.htaccess'.",
+            "evidence": "URL: https://ibb.co/5g1Kxg5R/.htaccess | Size: 23919 bytes"
+        },
+        {
+            "owasp_id": "X03",
+            "vuln_name": "WordPress Config Exposed",
+            "severity": "CRITICAL",
+            "detail": "Sensitive file accessible at '/wp-config.php'.",
+            "evidence": "URL: https://ibb.co/5g1Kxg5R/wp-config.php | Size: 23923 bytes"
+        },
+        {
+            "owasp_id": "X03",
+            "vuln_name": "PHP Config Exposed",
+            "severity": "HIGH",
+            "detail": "Sensitive file accessible at '/config.php'.",
+            "evidence": "URL: https://ibb.co/5g1Kxg5R/config.php | Size: 23920 bytes"
+        },
+        {
+            "owasp_id": "X03",
+            "vuln_name": "Database Config Exposed",
+            "severity": "CRITICAL",
+            "detail": "Sensitive file accessible at '/database.yml'.",
+            "evidence": "URL: https://ibb.co/5g1Kxg5R/database.yml | Size: 23922 bytes"
+        },
+        {
+            "owasp_id": "X03",
+            "vuln_name": "macOS Metadata Exposed",
+            "severity": "LOW",
+            "detail": "Sensitive file accessible at '/.DS_Store'.",
+            "evidence": "URL: https://ibb.co/5g1Kxg5R/.DS_Store | Size: 23919 bytes"
+        },
+        {
+            "owasp_id": "X03",
+            "vuln_name": "Sitemap Public",
+            "severity": "INFO",
+            "detail": "Sensitive file accessible at '/sitemap.xml'.",
+            "evidence": "URL: https://ibb.co/5g1Kxg5R/sitemap.xml | Size: 23921 bytes"
+        },
+        {
+            "owasp_id": "X03",
+            "vuln_name": "Flash Cross-Domain Policy",
+            "severity": "LOW",
+            "detail": "Sensitive file accessible at '/crossdomain.xml'.",
+            "evidence": "URL: https://ibb.co/5g1Kxg5R/crossdomain.xml | Size: 23925 bytes"
+        },
+        {
+            "owasp_id": "X03",
+            "vuln_name": "Apache Server Status",
+            "severity": "HIGH",
+            "detail": "Sensitive file accessible at '/server-status'.",
+            "evidence": "URL: https://ibb.co/5g1Kxg5R/server-status | Size: 23923 bytes"
+        },
+        {
+            "owasp_id": "X03",
+            "vuln_name": "Apache Server Info",
+            "severity": "HIGH",
+            "detail": "Sensitive file accessible at '/server-info'.",
+            "evidence": "URL: https://ibb.co/5g1Kxg5R/server-info | Size: 23921 bytes"
+        },
+        {
+            "owasp_id": "X03",
+            "vuln_name": "Database Backup Exposed",
+            "severity": "CRITICAL",
+            "detail": "Sensitive file accessible at '/backup.sql'.",
+            "evidence": "URL: https://ibb.co/5g1Kxg5R/backup.sql | Size: 23920 bytes"
+        },
+        {
+            "owasp_id": "X03",
+            "vuln_name": "Database Dump Exposed",
+            "severity": "CRITICAL",
+            "detail": "Sensitive file accessible at '/dump.sql'.",
+            "evidence": "URL: https://ibb.co/5g1Kxg5R/dump.sql | Size: 23918 bytes"
+        }
+    ]
+}
